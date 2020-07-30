@@ -1,8 +1,8 @@
 <?php
 class Ape extends animal {
-	public $yell;
+	public $yell= 'Auooo';
 	public function yell(){
-		echo "Auooo";
+		echo $this->yell;
 	}
 }
 
