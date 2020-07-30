@@ -40,7 +40,6 @@ echo $kodok->get_legs();
 echo "<br>";
 echo $kodok->jump();
 echo $sheep->get_cold_blooded(); //false
-
 ?>
 </body>
 </html>
