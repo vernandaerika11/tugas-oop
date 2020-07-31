@@ -14,32 +14,38 @@ require "Frog.php";
 
 $sheep = new Animal("shaun");
 
+echo "Binatang bernama: <br>";
 echo $sheep->get_name(); //"shaun"
-echo "<br>";
+echo "<br>Berkaki: <br>";
 echo $sheep->get_legs(); //2
-echo "<br>";
+echo "<br>Binatang tersebut berdarah dingin?<br>";
 echo $sheep->get_cold_blooded(); //false
-echo "<br>";
+echo "<br><br>";
 
 $sungokong = new Ape("kera sakti");
 
+echo "Selanjutnya, binatang bernama: <br>";
 echo $sungokong->get_name();
-echo "<br>";
-echo $sheep->get_legs();
-echo "<br>";
+echo "<br>Berkaki: <br>";
+echo $sungokong->get_legs();
+echo "<br>Memiliki suara: <br>";
 echo $sungokong->yell(); // "Auooo"
-echo "<br>";
+echo "<br>Binatang tersebut berdarah dingin?<br>";
 echo $sheep->get_cold_blooded(); //false
-echo "<br>";
+echo "<br><br>";
 
 $kodok = new Frog("buduk");
 
+echo "Terakhir, binatang bernama: <br>";
 echo $kodok->get_name();
-echo "<br>";
+echo "<br>Berkaki: <br>";
 echo $kodok->get_legs();
-echo "<br>";
+echo "<br>Memiliki suara: <br>";
 echo $kodok->jump();
-echo $sheep->get_cold_blooded(); //false
+echo "<br>Binatang tersebut berdarah dingin?<br>";
+echo $kodok->get_cold_blooded(); //true
+echo "<br><br>";
+
 ?>
 </body>
 </html>
